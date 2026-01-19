@@ -1,29 +1,16 @@
-[00:00:02.478] Server  LOG     
-[00:00:02.478] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:02.478] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+[00:00:02.849] Server  LOG     
+[00:00:02.849] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:02.849] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
 
-[00:00:02.479] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
-[00:00:02.479] Server  LOG     
-[00:00:02.479] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+[00:00:02.849] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:02.849] Server  LOG     
+[00:00:02.849] Server  LOG        The following mandatory changes were made to your tsconfig.json:
 
-[00:00:02.479] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
-[00:00:02.479] Server  LOG     
-[00:00:02.542] Server  LOG      ✓ Ready in 2.3s
-[00:00:07.746] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.138] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:08.138] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:08.138] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768662455315}
-[00:03:24.435] Server  LOG      ✓ Compiled in 97ms
-[00:03:27.873] Server  LOG      ✓ Compiled in 40ms
-[00:03:43.716] Server  LOG      ✓ Compiled in 62ms
-[00:03:50.852] Server  LOG      ✓ Compiled in 34ms
-[00:04:14.150] Server  LOG      ✓ Compiled in 38ms
-[00:04:17.267] Server  LOG      ✓ Compiled in 35ms
-[00:04:23.468] Server  LOG      ✓ Compiled in 35ms
-[00:04:28.613] Server  LOG      ✓ Compiled in 34ms
-[00:06:39.473] Server  WARN     ⚠ Cross origin request detected from 192.168.1.9 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:06:39.815] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.849] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:02.849] Server  LOG     
+[00:00:02.945] Server  LOG      ✓ Ready in 2.7s
+[00:00:05.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.653] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -33,48 +20,68 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-%s%s https://react.dev/link/hydration-mismatch 
+https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html
-                          lang="en"
-                          className="dark"
--                         __gchrome_remoteframetoken="e82ee0185996037d58c2c86accc428a1"
-                        >
-                          ...
-                            <div className="hidden md:...">
-                              <div className="relative f...">
-                                <Search>
-                                <Input placeholder="Search thr..." className="pl-9 bg-se...">
-                                  <input
-                                    type={undefined}
-                                    data-slot="input"
-                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
-                                    placeholder="Search threats, IPs, events..."
--                                   __gchrome_uniqueid="1"
-                                  >
-                  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Dashboard} serverProvidedParams={{...}}>
+        <Dashboard params={Promise} searchParams={Promise}>
+          <div className="min-h-scre...">
+            <DashboardHeader>
+            <main className="p-4 lg:p-6...">
+              <DeceptionInstances instances={[...]} selectedInstanceId="demo-insta..." ...>
+                <Card className="bg-card bo...">
+                  <div data-slot="card" className="text-card-...">
+                    <CardHeader>
+                    <CardContent className="space-y-4">
+                      <div data-slot="card-content" className="px-6 space...">
+                        <div>
+                        <div className="mt-4 p-4 b...">
+                          <h4>
+                          <div className="grid grid-...">
+                            <div>
+                            <div>
+                            <div className="flex items...">
+                              <Clock>
+                              <div>
+                                <p>
+                                <p className="text-sm font-medium text-foreground">
++                                 15/01/2025, 10:30:00
+-                                 1/15/2025, 10:30:00 AM
+              ...
+            ...
+    ...
 
-[00:06:40.025] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:06:40.025] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:06:40.025] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.1.9:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.1.9:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768662847204}
-[00:06:43.816] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:05.653] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:05.653] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:05.653] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:05.653] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768829721982}
+[00:00:05.653] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768829721982}
+[00:00:08.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768829724425}
+[00:00:29.503] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768829745838}
+[00:01:49.275] Server  LOG      ✓ Compiled in 61ms
+[00:01:52.624] Server  LOG      ✓ Compiled in 41ms
+[00:01:59.072] Server  LOG      ✓ Compiled in 42ms
+[00:02:06.945] Server  LOG      ✓ Compiled in 38ms
+[00:02:08.327] Server  LOG      ✓ Compiled in 24ms
+[00:02:10.329] Server  LOG      ✓ Compiled in 45ms
+[00:02:14.596] Server  LOG      ✓ Compiled in 38ms
+[00:25:17.365] Server  LOG      ✓ Compiled in 66ms
+[00:25:19.745] Server  LOG      ✓ Compiled in 33ms
+[00:26:44.267] Server  LOG      ✓ Compiled in 57ms
+[00:26:52.654] Server  LOG      ✓ Compiled in 65ms
+[00:26:59.241] Server  LOG      ✓ Compiled in 45ms
+[00:27:13.830] Server  LOG      ✓ Compiled in 33ms
+[00:27:18.749] Server  LOG      ✓ Compiled in 32ms
+[00:27:23.568] Server  LOG      ✓ Compiled in 36ms
+[00:37:41.582] Server  LOG      ✓ Compiled in 58ms
+[00:37:42.665] Browser ERROR   uncaughtError: ReferenceError: unseenCount is not defined
+[00:37:50.476] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:37:50.567] Server  LOG      ✓ Compiled in 22ms
+[00:37:50.632] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768831986979}
+[00:37:50.785] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:51.004] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -84,44 +91,42 @@ It can also happen if the client has a browser extension installed which messes 
 
 It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-%s%s https://react.dev/link/hydration-mismatch 
+https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html
-                          lang="en"
-                          className="dark"
--                         __gchrome_remoteframetoken="4709a3d405b73b156539d921b01be4e6"
-                        >
-                          ...
-                            <div className="hidden md:...">
-                              <div className="relative f...">
-                                <Search>
-                                <Input placeholder="Search thr..." className="pl-9 bg-se...">
-                                  <input
-                                    type={undefined}
-                                    data-slot="input"
-                                    className="file:text-foreground placeholder:text-muted-foreground selection:bg-pri..."
-                                    placeholder="Search threats, IPs, events..."
--                                   __gchrome_uniqueid="1"
-                                  >
-                  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function Dashboard} serverProvidedParams={{...}}>
+        <Dashboard params={Promise} searchParams={Promise}>
+          <div className="min-h-scre...">
+            <DashboardHeader>
+            <main className="p-4 lg:p-6...">
+              <DeceptionInstances instances={[...]} selectedInstanceId="demo-insta..." ...>
+                <Card className="bg-card bo...">
+                  <div data-slot="card" className="text-card-...">
+                    <CardHeader>
+                    <CardContent className="space-y-4">
+                      <div data-slot="card-content" className="px-6 space...">
+                        <div>
+                        <div className="mt-4 p-4 b...">
+                          <h4>
+                          <div className="grid grid-...">
+                            <div>
+                            <div>
+                            <div className="flex items...">
+                              <Clock>
+                              <div>
+                                <p>
+                                <p className="text-sm font-medium text-foreground">
++                                 15/01/2025, 10:30:00
+-                                 1/15/2025, 10:30:00 AM
+              ...
+            ...
+    ...
 
-[00:06:43.816] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:06:43.816] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:06:43.816] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.1.9:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.1.9:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768662850982}
+[00:37:51.004] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:37:51.004] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:37:51.004] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:37:51.004] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768831987364}
+[00:37:51.004] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1768831987364}
+[00:38:30.439] Server  LOG      ✓ Compiled in 66ms

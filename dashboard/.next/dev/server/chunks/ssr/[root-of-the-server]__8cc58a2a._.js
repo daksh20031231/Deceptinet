@@ -74,8 +74,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 ;
 const metadata = {
-    title: "SecureOps | Cybersecurity Dashboard",
-    description: "Enterprise Security Operations Center - Real-time threat monitoring and attack analysis",
+    title: "DECEPTINET | Cybersecurity Dashboard",
+    description: "Enterprise Security Operations Center - Real-time threat monitoring and deception technology",
     generator: 'v0.app'
 };
 const viewport = {

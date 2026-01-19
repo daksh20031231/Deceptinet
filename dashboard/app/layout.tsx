@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SecureOps | Cybersecurity Dashboard",
-  description: "Enterprise Security Operations Center - Real-time threat monitoring and attack analysis",
+  title: "DECEPTINET | Cybersecurity Dashboard",
+  description: "Enterprise Security Operations Center - Real-time threat monitoring and deception technology",
     generator: 'v0.app'
 }
 
